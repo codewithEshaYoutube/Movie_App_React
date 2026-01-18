@@ -11,13 +11,20 @@ const Card=( title)=>{
 }
 
 const App = ()=> {
+  const[searchTerm ,setSearchTerm]= useState()
   return(
-    <div className="card-container">
-    <h2>This is my movie app</h2>
-    < Card title="Star Wars"rating={5} isCool={true} actors={[{name:"Actors"}]}/>
-    <Card title = "Stranger Things"/>
-    <Card title="Lion King"/>
+    <main>
+
+    <div className="wrapper">
+      <header>
+        <img src="./hero-img.png" alt="HeroImage " />
+        <h1> Find <span className="text-gradient">
+          Movies</span> You'll Enjoy Without the Hassle</h1>
+      </header>
+    
+    <Search/>
     </div>
+    </main>
   )
 }
 
