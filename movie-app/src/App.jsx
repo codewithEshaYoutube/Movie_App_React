@@ -17,7 +17,7 @@ const App =()=>{
   const [searchTerm,setSearchTerm]= useState("");
   const [errorMessage, setErrorMessage]=useState('');
   const [movieList, setMovieList]=useState([]);
-  const [isLoading , setIsLoading]=useState(false);
+  const [isLoading , setIsLoading]=useState(initialState,true);
   const fetchMovies =async()=>{
     setIsLoading(true);
     setErrorMessage(''); 
