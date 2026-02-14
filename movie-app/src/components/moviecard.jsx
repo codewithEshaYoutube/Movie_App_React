@@ -13,3 +13,6 @@ const moviecard = ({movie:{ title
 }
 
 export default moviecard
+
+
+
